@@ -51,3 +51,4 @@ class OBBPredictor(DetectionPredictor):
             obb = torch.cat([rboxes, pred[:, 4:6]], dim=-1)
             results.append(Results(orig_img, path=img_path, names=self.model.names, obb=obb))
         return results
+#yolo obb predict source=E:\yema\YOLOv10\parking_data\images\2.jpg model=E:\YOLO\YOLOv8-8.2\runs\obb\park\weights\best.pt device=0 name=park

@@ -40,3 +40,5 @@ class OBBTrainer(yolo.detect.DetectionTrainer):
         """Return an instance of OBBValidator for validation of YOLO model."""
         self.loss_names = "box_loss", "cls_loss", "dfl_loss"
         return yolo.obb.OBBValidator(self.test_loader, save_dir=self.save_dir, args=copy(self.args))
+
+#yolo obb train data=E:\YOLO\YOLOv10\yema\yolov8-obb-data.yaml model=E:\YOLO\YOLOv10\ultralytics\cfg\models\v8\yolov8-obb.yaml epochs=100 batch=2 device=0 workers=0 name=park
